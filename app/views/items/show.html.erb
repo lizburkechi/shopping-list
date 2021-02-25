@@ -1,0 +1,5 @@
+<h2><%= @item.name %></h2>
+<p> You need <%= @item.name_and_amount%></p>
+<%= button_to "edit this item", edit_item_path(@item), :method => :get %>
+<%= button_to "delete this item", item_path(@item), method: :delete %>
+<%= link_to "go back", items_path %>

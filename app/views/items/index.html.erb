@@ -1,0 +1,11 @@
+<h1> This is your shopping list! </h1>
+<main>
+<ul><span>These are your items</span>
+<% @items.each do |item|%>
+<li><%= link_to item.name_and_amount, item %></li>
+   
+<%end%>
+
+
+</ul>
+</main>
